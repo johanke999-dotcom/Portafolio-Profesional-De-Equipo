@@ -2,58 +2,279 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>_Equipo Creativo_</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Creativo — Dev Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>🚀 Nuestro Equipo</h1>
-        <p>Construyendo el futuro con código</p>
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- FONDO DE GRILLA -->
+    <div class="bg-grid"></div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">EC<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#sobre-nosotros">Equipo</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO / HEADER -->
+    <header id="hero">
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="dot-pulse"></span>
+                Disponibles para proyectos &mdash; 2026
+            </div>
+            <h1>
+                <span class="line line-1">Desarrollamos</span>
+                <span class="line line-2">el futuro </span>
+            </h1>
+            <p class="hero-sub">Un equipo de desarrolladores y diseñadores apasionados por crear experiencias digitales que importan.</p>
+            <div class="hero-cta">
+                <a href="#sobre-nosotros" class="btn-primary">Conocer el equipo</a>
+                <a href="#habilidades" class="btn-ghost">Ver habilidades ↓</a>
+            </div>
+        </div>
+
+        <div class="hero-numbers">
+            <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Expertos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Ideas</span>
+            </div>
+        </div>
     </header>
 
+    <!-- SOBRE NOSOTROS -->
     <section id="sobre-nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo apasionado por el desarrollo web, la creatividad y la innovación. Cada integrante aporta habilidades únicas para construir proyectos increíbles.</p>
+        <div class="section-header">
+            <span class="section-tag">01 — Equipo</span>
+            <h2>Las personas <br>detrás del código</h2>
+            <p class="section-desc">Somos un equipo apasionado por el desarrollo web, la creatividad y la innovación. Cada integrante aporta habilidades únicas para construir proyectos increíbles.</p>
+        </div>
 
         <div class="equipo">
-            <div class="miembro-equipo">
-                <img src="foto-danilo.jpg" alt="Foto de Danilo" class="foto-perfil">
-                <h3>👨‍💻 Danilo Nicolas Leon</h3>
-                <p>Frontend Developer</p>
+
+            <div class="miembro-equipo" style="--delay: 0s">
+                <div class="miembro-img-wrap">
+                    <img src="foto-danilo.jpg" alt="Foto de Danilo" class="foto-perfil">
+                    <div class="miembro-overlay"><span>Frontend Dev</span></div>
+                </div>
+                <div class="miembro-info">
+                    <div class="miembro-role">Frontend Developer</div>
+                    <h3>Danilo Nicolás León</h3>
+                    <p>Especialista en interfaces modernas, con ojo para el detalle y pasión por la experiencia del usuario.</p>
+                    <div class="miembro-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="miembro-equipo">
-                <img src="foto-cristian.jpg" alt="Foto de Cristian" class="foto-perfil">
-                <h3>🎨 Cristian Adrian Villa</h3>
-                <p>Diseñador UI/UX</p>
+
+            <div class="miembro-equipo miembro-featured" style="--delay: 0.1s">
+                <div class="miembro-img-wrap">
+                    <img src="foto-cristian.jpg" alt="Foto de Cristian" class="foto-perfil">
+                    <div class="miembro-overlay"><span>UI/UX Designer</span></div>
+                </div>
+                <div class="miembro-info">
+                    <div class="miembro-role">Diseñador UI/UX</div>
+                    <h3>Cristian Adrián Villa</h3>
+                    <p>Diseñador creativo que transforma ideas complejas en experiencias visuales intuitivas y atractivas.</p>
+                    <div class="miembro-tags">
+                        <span>Figma</span><span>UX Research</span><span>Prototyping</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="miembro-equipo">
-                <img src="foto-johan.jpg" alt="Foto de Johan" class="foto-perfil">
-                <h3>⚙️ Johan Steven Calderon</h3>
-                <p>Backend Developer</p>
+
+            <div class="miembro-equipo" style="--delay: 0.2s">
+                <div class="miembro-img-wrap">
+                    <img src="foto-johan.jpg" alt="Foto de Johan" class="foto-perfil">
+                    <div class="miembro-overlay"><span>Backend Dev</span></div>
+                </div>
+                <div class="miembro-info">
+                    <div class="miembro-role">Backend Developer</div>
+                    <h3>Johan Steven Calderón</h3>
+                    <p>Arquitecto de sistemas robustos y escalables, especializado en lógica de servidor y bases de datos.</p>
+                    <div class="miembro-tags">
+                        <span>Git</span><span>APIs</span><span>Databases</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- HABILIDADES Nuestras -->
+    <!-- HABILIDADES -->
     <section id="habilidades">
-        <h2>Habilidades Nuestras</h2>
+        <div class="section-header">
+            <span class="section-tag">02 — Stack</span>
+            <h2>Nuestras <br>habilidades</h2>
+        </div>
 
-        <div class="grid">
-            <div class="card">HTML5</div>
-            <div class="card">CSS3</div>
-            <div class="card">JavaScript</div>
-            <div class="card">Git & GitHub</div>
-            <div class="card">Diseño UX</div>
-            <div class="card">Trabajo en equipo</div>
+        <div class="skills-layout">
+            <div class="skills-intro">
+                <p>Dominamos las tecnologías que impulsan la web moderna. Desde el diseño hasta el servidor, cubrimos todo el ciclo de desarrollo.</p>
+                <div class="skills-bar-list">
+                    <div class="skill-bar">
+                        <span class="skill-name">Frontend</span>
+                        <div class="bar-track"><div class="bar-fill" style="--w: 90%"></div></div>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name">UI/UX Design</span>
+                        <div class="bar-track"><div class="bar-fill" style="--w: 85%"></div></div>
+                        <span class="skill-pct">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name">Backend</span>
+                        <div class="bar-track"><div class="bar-fill" style="--w: 78%"></div></div>
+                        <span class="skill-pct">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name">Trabajo en equipo</span>
+                        <div class="bar-track"><div class="bar-fill" style="--w: 100%"></div></div>
+                        <span class="skill-pct">100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" style="--delay: 0s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l16 0M4 12l10 0M4 18l14 0"/></svg>
+                    </div>
+                    <h4>HTML5</h4>
+                    <p>Estructura semántica y accesible</p>
+                </div>
+                <div class="skill-card" style="--delay: 0.05s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h4>CSS3</h4>
+                    <p>Layouts modernos y animaciones</p>
+                </div>
+                <div class="skill-card" style="--delay: 0.1s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>Interactividad y lógica dinámica</p>
+                </div>
+                <div class="skill-card" style="--delay: 0.15s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h4>Git &amp; GitHub</h4>
+                    <p>Control de versiones colaborativo</p>
+                </div>
+                <div class="skill-card" style="--delay: 0.2s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h4>Diseño UX</h4>
+                    <p>Experiencias centradas en el usuario</p>
+                </div>
+                <div class="skill-card" style="--delay: 0.25s">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Trabajo en equipo</h4>
+                    <p>Colaboración ágil y efectiva</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Equipo Creativo | Proyecto Git</p>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">EC<span class="dot">.</span></div>
+                <p>Equipo Creativo — Desarrollando desde Ipiales-Nariño.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#sobre-nosotros">Equipo</a>
+                <a href="#habilidades">Habilidades</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Equipo Creativo &mdash; Proyecto Git</span>
+            <span>Hecho con &#9829; en Colombia</span>
+        </div>
     </footer>
+
+    <script>
+    // Cursor personalizado
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+    document.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX + 'px';
+        cursor.style.top = mouseY + 'px';
+    });
+
+    function animateFollower() {
+        followerX += (mouseX - followerX) * 0.12;
+        followerY += (mouseY - followerY) * 0.12;
+        follower.style.left = followerX + 'px';
+        follower.style.top = followerY + 'px';
+        requestAnimationFrame(animateFollower);
+    }
+    animateFollower();
+
+    document.querySelectorAll('a, button, .skill-card, .miembro-equipo').forEach(el => {
+        el.addEventListener('mouseenter', () => { cursor.classList.add('expand'); follower.classList.add('expand'); });
+        el.addEventListener('mouseleave', () => { cursor.classList.remove('expand'); follower.classList.remove('expand'); });
+    });
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.miembro-equipo, .skill-card, .section-header, .skill-bar').forEach(el => observer.observe(el));
+
+    // Animate skill bars
+    const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.querySelectorAll('.bar-fill').forEach(bar => bar.classList.add('animate'));
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.skills-bar-list').forEach(el => barObserver.observe(el));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    </script>
 
 </body>
 </html>
